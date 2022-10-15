@@ -1,0 +1,53 @@
+.tweetBoxWrapper {
+    @apply flex space-x-2 p-5;
+
+    > img {
+        @apply h-14 w-14 rounded-full object-cover;
+    }
+
+    .tweetBox {
+        @apply flex flex-1 items-center pl-2;
+    
+        > form {
+            @apply flex flex-1 flex-col;
+
+            > input {
+                @apply h-24 w-full text-xl outline-none placeholder:text-xl;
+            }
+    
+            > .infoWrapper {
+                @apply flex items-center;
+    
+                > .iconsWrapper {
+                    @apply flex flex-1 space-x-2 text-twitter;
+                
+                    > .icon {
+                        @apply h-5 w-5 transition-transform duration-150 ease-out hover:scale-150;
+                    }
+                }
+    
+                > button {
+                    @apply disabled:opacity-40 bg-twitter px-5 py-2 rounded-full text-white font-bold;
+                }
+            }
+
+            .imageForm {
+                @apply rounded-lg mt-5 flex bg-twitter/80 py-2 px-4;
+            
+                    > input {
+                        @apply flex-1 bg-transparent p-2 text-white outline-none placeholder:text-white; 
+                    }
+    
+                    > button {
+                        @apply font-bold text-white;
+                    }
+    
+                }
+            }
+            > .selectedImage {
+                @apply mt-10 h-40 w-full rounded-xl object-contain shadow-lg;
+            }
+        }
+
+        
+}

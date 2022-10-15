@@ -1,0 +1,16 @@
+.widgets {
+    @apply px-2 mt-2 col-span-2 hidden lg:inline;
+
+    .search {
+        @apply flex items-center mt-2 p-3 rounded-full space-x-2 bg-gray-100;
+    
+        > .searchIcon {
+            @apply h-5 w-5 text-gray-400;
+
+        }
+
+        > input {
+            @apply bg-transparent outline-none flex-1;
+        }
+    }
+}
